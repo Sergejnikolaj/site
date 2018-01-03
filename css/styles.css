@@ -1,0 +1,801 @@
+html,body{
+	margin: 0;
+}
+body{
+	margin: 0 auto;
+	/* width: 1440px; */
+}
+header{
+	width: 100%;
+	overflow: hidden;
+}
+header div.complimentary{
+	width: 100%;
+	background:#9d1412;
+	overflow: hidden;	
+}
+div.complimentary p{
+	/* float: right; */
+	margin: 7px auto;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #ffffff;
+	/* margin: 0 auto; */
+	text-align: right;
+	max-width: 1240px;
+}
+.menu-wrapper {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+div.crypto_menu{
+	display: none;
+}
+div.bookstore{
+	float:left;
+	margin: 19px 0 17px;
+	height: 34px;
+}
+div.search{
+	display: none;
+}
+div.bag{
+	display: none;
+}
+menu.left{
+	margin: 0;
+	padding-left: 0;
+	float: left;
+}
+menu.left li{
+	display: inline-block;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 10px;
+	margin: 4px 0 0 20px; 
+	line-height: 67px;
+	vertical-align: middle;
+}
+menu.left li a{
+	color: #666666;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+menu.right{
+	margin: 0;
+	float: right;
+}
+menu.right li{
+	display: inline-block;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 10px;
+	margin: 4px 0 0 15px; 
+	line-height: 67px;
+	vertical-align: middle;
+}
+menu.right li a{
+	color: #666666;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+div.main-gallery{
+	position: relative;
+}
+div.gallery-wrapper{
+	margin: 0 auto;
+	width: 100%! important;
+}
+section.girl{
+	width: 100%;
+	height: 715px;
+	background: url(../img/girl.jpg);
+	background-size: cover;
+}
+section div{
+	width: 100%;
+	height: 8%;
+	margin: 0;
+	text-align: center;
+	color: white;
+	font-family: Garamond;
+	font-size: 52px;
+	line-height: 780px;
+	valign: middle;
+}
+section div button{
+	background: #9d1412;
+	width: 260px;
+	height: 40px;
+	border: none;
+	color: white;
+	text-transform: uppercase;
+}
+section.woman{
+	width: 100%;
+	height: 715px;
+	background: url(../img/woman.jpg)no-repeat;
+	background-size: cover;
+}
+div.subscribe-wrapper{
+	width: 100%;
+	background: #333333;
+	overflow: hidden;
+	color: #929292;
+}
+div.subscribe{
+	max-width: 1240px;
+	margin: 0 auto;
+}
+div.subscribe div{
+	margin: 25px 0 0;
+	float: left;
+	line-height: 0.9em;
+}
+.subscribe div h1{
+	margin: 0;
+	font-size: 29px;
+	font-family: Garamond;
+	font-weight: lighter;
+	color: white;
+}
+.subscribe div p{
+	margin: 0;
+	font-family: Myriad Pro;
+	font-weight: lighter;
+	font-size: 14px;
+}
+.subscribe div.sign_up{
+	float: right;
+	height: 42px;
+	background: #0f0f0f;
+	margin: 25px 0 20px;
+	width: calc(100% - 400px);
+	max-width: 760px;
+}
+input[type=text]{
+	min-width: 180px;
+	width: calc(100% - 180px);
+	height: 38px;
+	background: #0f0f0f;
+	border: none;
+	text-transform: uppercase;
+	padding-left: 20px;
+	outline: none;
+	color: #666666;
+	font-size: 10px;
+	box-sizing: border-box;
+}
+input[type=submit]{
+	float: right;
+	width: 180px;
+	height: 42px;
+	background: #9d1412;
+	border: none;
+	color: white;
+	text-transform: uppercase;
+}
+div.subscribe button{
+	float: right;
+	width: 22px;
+	height: 25px;
+	margin: 10px 0px 10px 18px;
+	padding: 0;
+	border: none;
+	background: #333333;
+}
+div.subscribe button img{
+	margin-top: 1px;
+}
+div.flowers{
+	display: none;
+}
+#prev2{
+	position:absolute;
+	top:50%;
+	left:4%;
+	z-index:44;
+}
+#next2{
+	position:absolute;
+	top:50%;
+	left:93%;
+	z-index:44;
+}
+div.book-wrapper {
+	max-width: 1240px;
+	margin: 0 auto;
+	padding-left: 3%;
+}
+div.today{
+	width: 100%;
+	text-align: center;
+	color: #9d1412;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 70px 0;
+}
+div.book{
+	float: left;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	width: 24%;
+	height: 420px;
+	margin: 0 3px;
+	text-align: center;
+}
+div.book img{
+	max-width:100%;
+	max-height:100%;
+}
+div.book a{
+	color: #9d1412;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+div.book p{
+	color: #666666;
+	font-size: 16px;
+	text-align: center;
+	margin: 7px 0;
+}
+div.book p span{
+	text-transform: uppercase;
+}
+div.book-wrapper:after{
+	content: "";
+    display: table;
+    clear: both;
+}
+div.line{
+	width: 100%;
+	border-top: 1px solid silver;
+	margin: 4% 0 0 0;
+}
+div.picture-wrapper{
+	width: 100%;
+	max-width: 1240px;
+	margin: 0 auto;
+	margin-top: 4%;
+}
+div.picture-wrapper div.picture{
+	margin: 0 1% 0 0;
+	width: 49%;
+}
+div.picture-wrapper img{
+	width: 100%;
+}
+div.picture-wrapper div{
+	float: left;
+	width: 49%;
+	text-align: center;
+	color: #666666;
+	font-size: 16px;
+	margin-left: 1%;
+}
+.picture-wrapper div p{
+	margin: 1% 0 4.6% 0;
+}
+div.picture-wrapper:after{
+	content: "";
+    display: table;
+    clear: both;
+}
+div.photo-wrapper{
+	max-width: 1240px;
+	margin: 0 auto;
+	margin-top: 4%;
+	text-align: center;
+	position: relative;
+}
+.photo-wrapper div.difference{
+	width: 30%;
+	background: white;
+	color: #666666;
+	font-size: 12px;
+	font-family: Myriad Pro;
+	position: absolute;
+	margin-top: 28%;
+	left: 34%;
+	z-index: 1;
+	padding-bottom: 4%;
+}
+div.difference p{
+	color: #9d1412;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family: 'Nunito Sans';
+	font-weight: bold;
+	margin-bottom: 0;
+}
+div.photo-wrapper div{
+	width: 49%;
+	max-height: 400px;
+	float: left;
+	margin: 1%;
+}
+
+div.photo-wrapper .holder{
+	position:relative;
+	min-height: 400px;
+}
+.photo-wrapper div img{
+	width: 100%;
+}
+.photo-wrapper div.exhibition{
+	display: none;
+	width: 92%;
+	background-color: rgba(255,255,255, 0.9);
+	color: #666666;
+	font-size: 12px;
+	font-family: Myriad Pro;
+	position: absolute;
+	margin-top: 8%;
+	left: 3%;
+	padding: 6% 0 7% 0;
+	top: 13%;
+}
+div.holder:hover div.exhibition{
+	display: block;
+}
+div.exhibition p{
+	text-transform: uppercase;
+	font-family: 'Nunito Sans';
+	font-size: 11px;
+	margin: 2% 0 1% 0;
+}
+div.exhibition h2{
+	font-weight: normal;
+	font-family: Garamond, sharp;
+	font-size: 20px;
+	margin: 1% 0;
+}
+div.exhibition a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #9d1412;
+	font-size: 14px;
+	font-family: 'Nunito Sans';
+	font-weight: bold;
+}
+div.photo-wrapper div.left{
+	margin: 1% 1% 1% 0;
+}
+div.photo-wrapper div.right{
+	margin: 1% 0 1% 1%;
+	float: right;
+}
+div.photo-wrapper:after{
+	content: "";
+    display: table;
+    clear: both;
+}
+footer{
+	max-width: 1240px;
+	margin: 0 auto;
+	border-bottom: 1px solid #cccccc;
+	overflow: hidden;
+	padding: 1% 0;
+}
+footer div.follow{
+	width: 100%;
+	height: 1px;
+	text-align: center;
+	font-size: 15px;
+}
+footer div.follow p{
+	margin: 0;
+	color: #666666;
+}
+div.follow ul{
+	padding: 0;
+	margin: 0;
+}
+div.follow ul li{
+	display: inline-block;
+	margin: 1%;
+}
+div.follow ul img{
+	width: 20px;
+}
+footer div.left{
+	float: left;
+	margin-right: 12%;
+}
+footer div.left ul{
+	list-style-type: none;
+	margin: 0 1%;
+	padding: 0;
+	width: 120%;
+	line-height: 0.8em;
+}
+div.left ul a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #666666;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+footer div.sign_up{
+	width: 33%;
+	float: right;
+}
+footer div.sign_up p{
+	margin: 0 0 1% 0;
+	color: #666666;
+	font-size: 15px;
+}
+footer input[type=text]{
+	background: #efefef;
+	width: 70%;
+	height: 30px;
+}
+footer input[type=submit]{
+	width: 30%;
+	height: 30px;
+}
+div.footer:after{
+	content: "";
+    display: table;
+    clear: both;
+}
+div.last{
+	width: 100%;
+	text-align: center;
+	font-family: 'Nunito Sans';
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #666666;
+	font-weight: bold;
+	padding: 1% 0;
+}
+
+
+@media (max-width: 1024px){
+	div.complimentary p{
+		padding-right: 1%;
+	}
+	div.bookstore{
+		padding-left: 1%;
+	}
+	menu.right {
+		padding: 0 1% 0 0;
+	}
+	menu.right li {
+		margin: 0 1px;
+		padding: 4px 4px 0 0;
+	}
+	menu.right div{
+		display: none;
+		width: 1px;
+		height: 1px;
+	}
+	div.subscribe{
+		padding: 0 1%;
+	}
+	div.picture-wrapper div p{
+	margin: 1% 0 3.8% 0;
+	}
+	div.photo-wrapper div.difference{
+		padding: 2%;
+		left: 32%;
+	}
+	.photo-wrapper div.difference  p{
+		margin: 0;
+	}
+	div.photo-wrapper div.holder{
+		min-height: 335px;
+	}
+	div.holder div.exhibition{
+		margin: 0;
+		left: 4%;
+		top: 19%;
+		padding: 1% 0;
+	}
+	footer{
+		padding: 0 1%;
+	}
+	footer div.sign_up{
+		width: 35%;
+	}
+}
+@media (max-width: 768px){
+	/* тут херачишь все стили для мобилок, для примера добавил 1 стиль */
+	menu.left {
+		display: none;
+	}
+	menu.right{
+		
+	}
+	menu.right li{
+		height: 35px;
+		font-size: 0;
+		margin: 0 0 1% 0;
+		padding: 0;
+	}
+	menu.right li img{
+		width: 36px;
+		height: 38px;
+		margin-right: 12px;
+	}
+	div.complimentary p{
+		width: 100%;
+		max-width: 768px;
+		background:#9d1412;
+		overflow: hidden;
+		text-align: center;
+		font-family: 'Lato', sans-serif;
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #ffffff;
+		padding: 5px 0;
+	}
+	div.menu-wrapper {
+		max-width: 768px;
+		min-height: 70px;
+	}
+	div.bookstore{
+		height: 1px;
+		margin: 0;
+		padding-top: 14px;
+		width: 100%;
+		max-width: 768px;
+		min-width: 260px;
+		text-align: center;
+		overflow: visible;
+	}
+	div.bookstore img{
+		margin-top: 4px;
+	}
+	div.crypto_menu{
+		display: block;
+		float: left;
+		height: 1px;	
+		margin-left: 6%;
+		margin-top: 5px;
+	}
+	div.bag{
+		display: block;
+		float: right;
+		height: 1px;
+		margin-right: 25px;
+	}
+	div.search{
+		display: block;
+		float: right;
+		height: 35px;
+		margin-right: 25px;
+	}
+	div.subscribe{
+		display: none;
+	}
+	section{
+		position: relative;
+		max-height: 400px;
+		width: 100%;
+		max-width: 768px;
+	}
+	section div{
+		padding: 0;
+		margin-top: 70px;
+		color: #666666;
+	}
+	section div.shop_now{
+		margin-top: 20px;
+	}
+	section div button{
+		color: #666666;
+		background: #ffffff;
+		font-size: 20px;
+		font-weight: bold;
+		border-bottom: 1px solid grey;
+		max-width: 114px;
+		max-height: 30px;
+		padding: 0;
+		margin: 0;
+	}
+	section div button:hover{
+		cursor: pointer;
+	}
+	div.today{
+		border-top: 1px solid silver;
+		margin-top: 200px;
+		padding-top: 50px;
+		margin-bottom: 20px;
+	}
+	div.book-wrapper{
+		padding: 0;
+	}
+	div.book-wrapper div.right{
+		padding: 0;
+	}
+	div.book{
+		width: 50%;
+		min-width: 240px;
+		margin: 50px 0;
+	}
+	.book-wrapper div.book img{
+		max-width: 250px;
+	}
+	div.book p{
+		font-family: Garamond;
+		font-size: 28px;
+	}
+	div.book a{
+		font-family: Garamond;
+		font-size: 20px;
+		text-decoration: none;
+		padding-bottom: 5px;
+		border-bottom: 2px solid #9d1412;
+	}
+	div.book img{
+		max-width: 260px;
+		max-height: 339px;
+	}
+	div.right{
+		float: right;
+		padding-right: 3%;
+	}
+	div.picture-wrapper div{
+		width: 100%;
+		max-width: 768px;
+		text-align: center;
+		margin: 0;
+		padding: 2% 0;
+	}
+	div.picture-wrapper div.picture{
+		width: 100%;
+		margin: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	div.picture-wrapper p{
+		font-family: Garamond;
+		font-size: 28px;
+		margin: 20px 0 40px 0;
+	}
+	div.photo-wrapper div.difference{
+		width: 100%;
+		position: static;
+		margin: 0;
+		padding: 0;
+	}
+	div.photo-wrapper div.holder{
+		width: 49%;
+		min-height: 251px;
+		padding-right: 0;
+	}
+	div.photo-wrapper div.holder img{
+		width: 100%;
+	}
+	div.holder div.exhibition{
+		margin: 0;
+	}
+	footer{
+		padding: 0 0 3% 0;
+	}
+	footer div.box{
+		width: 90%;
+		margin: 0 auto;
+	}
+	footer div.sign_up{
+		display: none;
+	}
+	footer div.follow p{
+		margin: 3% 0 1% 0;
+		font-size: 32px;
+		font-family: 'Garamond'
+	}
+	footer div.follow li{
+		margin: 0 3%;
+	}
+	footer div.follow img{
+		width: 100%;
+	}
+	footer div.left{
+		width: 30%;
+		margin: 16% 0 0 0;
+		padding-left: 18%;
+	}
+	footer div.left ul{
+		line-height: 2em;
+	}
+	footer div.left  a{
+		font-family: 'Nunito Sans';
+		font-size: 20px;
+		font-weight: normal;
+	}
+	div.last{
+		font-size: 20px;
+		font-weight: normal;
+		padding: 2% 0;
+	}
+	
+}
+@media (max-width: 520px){
+	div.menu-wrapper {
+		min-height: 60px;
+		padding: 0 2%;
+	}
+	div.crypto_menu{
+		margin-left: 5px;
+		margin-top: 1%;
+	}
+	div.crypto_menu img{
+		width: 15px;
+		height: 15px;
+		padding-top: 5px;
+	}
+	div.bookstore img{
+		width: 190px;
+		padding-right: 28px;
+	}
+	menu.right li {
+		margin-bottom: 5%;
+		margin-left: 3px;
+		padding-top: 4%;
+	}
+	menu.right li img{
+		width: 18px;
+		height: 18px;
+		margin-right: 0;
+		padding-bottom: 65%;
+	}
+	section.girl{
+		width: 100%;
+		max-width: 520px;
+		height: 400px;
+		position: relative;
+	}
+	section.girl div{
+		font-size: 30px;
+	}
+	div.main-gallery .nav #next2{
+		left: 90%;
+	}
+	div.main-gallery .nav #prev2{
+		left: 1%;
+	}
+	div.book{
+		width:100%;
+		margin: 8% auto;
+		text-align: center;
+	}
+	div.picture-wrapper div {
+		max-width: 520px;
+		text-align: center;
+		margin: 0;
+	}
+	div.picture-wrapper div img{
+		min-width: 98%;
+	}
+	div.photo-wrapper div.holder{
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	footer div.box{
+		width: 100%;
+		max-width: 520px;
+	}
+	footer div.follow{
+		margin-bottom: 25%;
+	}
+	footer div.follow li{
+		margin: 1%;
+	}
+	footer div.left{
+		width: 100%;
+		max-width: 520px;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	footer div.left ul{
+		width: 100%;
+		max-width: 520px;
+	}
+}
