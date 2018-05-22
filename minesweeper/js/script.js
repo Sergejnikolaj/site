@@ -68,9 +68,8 @@
 						
 						for(var k=0; k<10; k++){
 							for(var j=0; j<10; j++){
-								section += '<div class = "field" data-x =' + dataX + ' data-y =' + j +'></div>';
+								section += '<div class = "field" data-x =' + k + ' data-y =' + j +'></div>';
 							}
-							dataX++;
 						}
 						
 						section += '</section>';
@@ -92,61 +91,29 @@
 					}
 					
 					function  checkEmptyBlocksAround(x, y){
+					
+					
+						var arrBombsAround = [];
+						arrBombsAround.push({x:x, y:y-1});
+						arrBombsAround.push({x:x+1, y:y});
+						arrBombsAround.push({x:x, y:y+1});
+						arrBombsAround.push({x:x+1, y:y-1});
+						arrBombsAround.push({x:x+1, y:y+1});
+						arrBombsAround.push({x:x-1, y:y+1});
+						arrBombsAround.push({x:x-1, y:y});
+						arrBombsAround.push({x:x-1, y:y-1});
+						
+						
+						for(var i=0; arrBombsAround.length>i; i++){
+						
+								
+							var nearBlock = $('div[data-x="'+arrBombsAround[i].x+'"][data-y="'+arrBombsAround[i].y+'"]');
 							
-						var nearBlock = $('div[data-x="'+x+'"][data-y="'+(y-1)+'"]');	
-						if(nearBlock.not('.bomb') && nearBlock.hasClass('field')){
-							nearBlock.removeClass('field');
-							if(nearBlock.html()== '') {
-								checkEmptyBlocksAround(x, (y-1));
-							}
-						}
-						var nearBlock =	$('div[data-x="'+(x+1)+'"][data-y="'+y+'"]');	
-						if(nearBlock.not('.bomb') && nearBlock.hasClass('field')){
-							nearBlock.removeClass('field');
-							if(nearBlock.html()== ''){
-								checkEmptyBlocksAround((x+1), y);
-							}
-						}
-						var nearBlock = $('div[data-x="'+x+'"][data-y="'+(y+1)+'"]');
-						if(nearBlock.not('.bomb') && nearBlock.hasClass('field')){
-							nearBlock.removeClass('field');
-							if(nearBlock.html()== ''){
-								checkEmptyBlocksAround(x, (y+1));
-							}
-						}
-						var nearBlock = $('div[data-x="'+(x+1)+'"][data-y="'+(y-1)+'"]');
-						if(nearBlock.not('.bomb') && nearBlock.hasClass('field')){
-							nearBlock.removeClass('field');
-							if(nearBlock.html()== ''){
-								checkEmptyBlocksAround((x+1), (y-1));
-							}
-						}
-						var nearBlock = $('div[data-x="'+(x+1)+'"][data-y="'+(y+1)+'"]');
-						if(nearBlock.not('.bomb') && nearBlock.hasClass('field')){
-							nearBlock.removeClass('field');
-							if(nearBlock.html()== ''){
-								checkEmptyBlocksAround((x+1), (y+1));
-							}
-						}
-						var nearBlock = $('div[data-x="'+(x-1)+'"][data-y="'+(y+1)+'"]');
-						if(nearBlock.not('.bomb') && nearBlock.hasClass('field')){
-							nearBlock.removeClass('field');
-							if(nearBlock.html()== ''){
-								checkEmptyBlocksAround((x-1), (y+1));
-							}
-						}
-						var nearBlock = $('div[data-x="'+(x-1)+'"][data-y="'+y+'"]');
-						if(nearBlock.not('.bomb') && nearBlock.hasClass('field')){
-							nearBlock.removeClass('field');
-							if(nearBlock.html()== ''){
-								checkEmptyBlocksAround((x-1), y);
-							}
-						}
-						var nearBlock = $('div[data-x="'+(x-1)+'"][data-y="'+(y-1)+'"]');
-						if(nearBlock.not('.bomb') && nearBlock.hasClass('field')){
-							nearBlock.removeClass('field');
-							if(nearBlock.html()== ''){
-								checkEmptyBlocksAround((x-1), (y-1));
+							if(nearBlock.not('.bomb') && nearBlock.hasClass('field')){
+								nearBlock.removeClass('field');
+								if(nearBlock.html()== '') {
+									checkEmptyBlocksAround(arrBombsAround[i].x, arrBombsAround[i].y);
+								}
 							}
 						}
 					}
